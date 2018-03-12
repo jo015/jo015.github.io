@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Design Document</title>
+<meta charset="utf-8">
+    <style>
+        body {
+            background-color: #666666;
+            padding:1px;
+            margin:3px;
+        }
+        h3 {
+            background-color: #000000;
+            color: #ff9933;
+            padding: 10px 40px 10px 40px;
+        }
+        p {
+            padding-left:10px
+        }
+        
+
+    </style>
+</head>
+<body>
+    <h1 style =
+        "background-color: #ff9933;
+        color: #000000;
+        padding: 10px 40px 10px 40px;
+        text-align:center;">
+         Design Document</h1>
+    
+         <h3>
+        Purpose
+         </h3>
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px; background: #ffffff">
+            The purpose of this web site is to create a central location or “hub” for my 7th grade math class.  
+            The website will provide all schedules, resources, assignments, and lessons for my students as well as parents. 
+             Students will visit this site daily for information pertaining to class.  They will be able to find all 
+             information in one spot instead of having to go to shared drives, google classroom, email, etc. to find 
+             what they need for class.  Parents can also go to the web site to be informed on what is going on in class or
+              how to use technology such as gradebook.
+         </p>
+         <h3>
+        Use Cases     
+         </h3>
+
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px; background: #ffffff">
+            Use Case 1 : Review Schedule
+           <br> Actor: Student
+           <br>
+            <br>At any time during the course a student wants to look at the calendar to know what is coming up in class.  
+            She goes to the web site and selects the unit she would like to look at the schedule for.  
+            Once on the unit page, she can select the schedule.  The student will look through the assignments, quizzes, 
+            tests, etc. on the schedule for the unit to know when events are happening throughout the unit.
+            <br>
+            <br>Alternate Flow 1: The student chooses calendar on the main page and looks through specific days
+             when events are happening through multiple units.
+         </p>
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px; background: #ffffff">
+             Use Case 2: Find Resources 
+           <br> Actor: Student
+           <br>
+            <br>At any time during the course a student wants to find information on the topic being
+             studied in class.  The student will go to the current unit and from there may select,
+              assignments, study guides, practice tests, notes, or additional resources.  
+            The student will select additional resources and choose a link.
+            <br>
+            <br>Alternate Flow 1: The student chooses assignments and goes to a list of 
+            assignments that they will then complete or rework.
+            <br>
+            <br>Alternate Flow 2: The student chooses study guides and works through a study 
+            guide that covers all material from the unit
+            <br>
+            <br>Alternate Flow 3: The student chooses practice tests and will work through
+             an example of a test for the unit.
+             <br>
+             <br>Alternate Flow 4: The student chooses notes and goes back through lessons
+              that have already been taught.
+         </p>
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+         Use Case 3: Student Absence 
+           <br> Actor: Student
+           <br>
+            <br>A student misses school but wants to complete the lesson at home so they are not 
+            behind when they return.  The student goes to the main page and chooses the link to
+             the unit they are on.  The student then goes into the notes section and finds the 
+             specific topic.  The student will go through the lesson.  The student will then go
+              back to the unit page and go to assignments. 
+             The student will complete any assignments they have missed for the day.
+            <br>
+            <br>Alternate Flow 1: The student goes to the calendar on the main page and 
+            looks on the day they are absent.  The calendar will list specifically what 
+            was completed on the day.  
+            The student can then follow the links within the calendar to the pages.
+            
+         </p>
+         <h3>
+        Design Concept
+         </h3>
+
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+            Audience
+            
+            <br>
+            <br>
+            The audience for my website will primarily be 7th grade math students, 
+            both male and female.  These students are enrolled in the Platte County 
+            R-III School District, specifically Barry Middle School.  Barry Middle School 
+            is a 5-8 school that is in suburban Kansas City, Missouri.  The students who 
+            will be using the website are all given Chromebooks at the start of the school 
+            year to use both at school and at home.  They have used them for several years 
+            and have a good understanding of the abilities and functions of the tool.
+         </p>
+
+         <dl style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+            Survey
+            <br>
+            <br>
+            I asked 5 7th grade students, both male and female, from different classes, a survey.  I explained what the website was about
+             and to answer the questions as if they would be getting the website.  These are the questions and responses.
+            <br><br><dt>How often would you visit the site and why?</dt>
+            <dd>4 out of 5 said 3-4 times per week and the reasons were homework help and 
+                understanding the lessons better.</dd>
+            <br><dt>How much do you feel like this website would help you and why?</dt>
+            <dd>4 out of 5 gave the highest level (a four) and the reasons were questions after school.</dd>
+            <br><dt>Rank each of the items of importance to be on the site:
+                   <br> Assignments
+                    <br>Notes
+                    <br>Syllabus
+                    <br>Study Guides
+                    <br>Additional resources
+                    <br>Schedule
+                    </dt>
+            <dd>From most to least importance, they were ranked: Assignments, Study Guides, Schedule, Notes, 
+                Additional Resources, and Syllabus</dd>
+            <br><dt>Are there any other items you feel are important to include on the site?</dt>
+            <dd>Practice tests, videos, and interesting ways to do the classwork were listed as other things to put on the site.</dd>
+
+
+            </dd>
+        </dl>
+            
+            <dl style=
+            "border: 3px ridge #ff9933; padding: 10px; background: #ffffff">
+            Reference Websites
+            <br>
+                <dt><a href="https://sites.google.com/a/student.oregoncs.org/lpapio/">Mrs. Papio's 7th/8th Grade Math Class Website</a></dt>
+                <dd>This website has a good layout.  There are several pages that have overall 
+                information and then subtopics for each grade.  I will set up my web site the 
+                same using units instead of grades.  
+                As in all case studies provided, there are many subpages within each unit.</dd>
+                <dt><a href="https://msmuehlecksmathwebsite.weebly.com/">Ms. Muehleck's Math Class Website</a></dt>
+                <dd>The style of this page is one that I will try to avoid, it is overwhelming with all 
+                the colors, fonts, styles, and columns.  As in the case studies, it is easy for students 
+                to find specifically what they need as everything is styled similarly, colors and fonts 
+                match, and there is a clean design.</dd>
+                <dt><a href="http://scicutella.weebly.com/">Ms. Scicutella & Mr. Nash -PS 33 Chelsea Prep</a></dt>
+                <dd>This is great example of consistency, I like how everything matches and flows well, 
+                the viewer never feels like they have gone to a different web site.  As in the case studies, 
+                there are several pages in my web site.  All the pages will be cohesive and flow well.</dd>
+                <dt><a href="https://lauraimperiale.weebly.com/">Ms. Imperiale's Fourth Grade Class</a></dt>
+                <dd>I do not like the continuous scroll subpages.  It makes it hard to find material.  
+                As discussed in the case studies, information is broken down into 
+                several subtopics so that there is not too much information on any given page.  </dd>
+                <dt><a href="http://www.mrsgoldsclass.com/Our_Classroom.htm">Mrs. Gold's Classroom</a></dt>
+                    <dd>This web site is very well organized with a clear purpose to what each page is 
+                    for and links within those pages to other pages.  As mentioned in the case studies, 
+                    each page on the website will be clearly labeled as to what the user will find. 
+                     The paths to each subtopic is easy to follow. </dd>
+                </dl>
+
+         <h3>
+        Presentation     
+         </h3>
+         <dl style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+         Content Synopsis
+         <br>
+         The content on my site will be divided into four areas
+         <br>  
+         <br> 
+            <dt>Units</dt>
+                 <dd>Information specific to each unit </dd>
+            <dt>Bio/Contact</dt>
+                <dd> Information on the teacher and how to contact her</dd>
+            <dt>Syllabus</dt>
+                <dd> Information on the syllabus</dd>
+            <dt>Calendar</dt>
+                <dd> Information on daily tasks and activities</dd>
+            <dt>Parents</dt>
+                <dd>Information and tutorials for parents </dd>
+            
+        </dl>
+        
+        <p style=
+        "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+        
+       Text Outline<br>
+       <br>
+       I.Main Page
+        <br><br> &nbsp; A.Units – This page will have links to all 8 units
+        <br><br> &nbsp; &nbsp;1.Integers and Rational Numbers
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;2.Analyze and Use Proportional Relationships
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;3.Analyze and Solve Percent Problems
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;4.Generate Equivalent Expressions
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;5.Solve Problems Using Equations and Inequalities
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;6.Use Sampling to Draw Inferences About Populations
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;7.Probability
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b..Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+        <br><br> &nbsp; &nbsp;8.Solve Problems Involving Geometry
+        <br> &nbsp; &nbsp; &nbsp;a.Resources – Links for the students to find more information on the unit
+        <br> &nbsp; &nbsp; &nbsp;b.Practice Test – A practice test for students to check their understanding of the material (This will be a google form)
+        <br> &nbsp; &nbsp; &nbsp;c.Study Guide – A list of material that students will need to understand for the unit as well as practice problems
+        <br> &nbsp; &nbsp; &nbsp;d.Assignments – A list of all assignments for the unit
+        <br> &nbsp; &nbsp; &nbsp;e.Schedule – A schedule of important dates for the unit, due dates, test dates, presentation dates, etc.
+        <br> &nbsp; &nbsp; &nbsp;f.Notes – Slides for the topics of the unit
+
+        <br><br> &nbsp;B.Bio/Contact – This page will have links to information on the teacher and how to contact them
+        <br> &nbsp; &nbsp;1.Biography – A description of the teacher, their education, and philosophies
+        <br> &nbsp; &nbsp;2.Contact – How to contact the teacher
+        <br><br> &nbsp;C.Syllabus – This page links to a copy of the syllabus
+        <br><br> &nbsp;D.Calendar – This page links to a calendar with all important course and school dates
+        <br><br> &nbsp;E.Parent information – This page links to a page that has information for parents 
+        <br> &nbsp; &nbsp;1.How to access grades
+        <br> &nbsp; &nbsp;2.How to access Envisions
+        <br> &nbsp; &nbsp;3.How to join the newsletter
+
+
+
+       </p>
+
+       <p style=
+       "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+      Wireframe
+      <br>
+      <a href= "https://embed.coggle.it/diagram/Wp2X4sce51mP9LVG/1d2f45e2e6571215560ba6202abc3254f214d62f118c1536d4a028bae11c7b94">
+        <img src="wireframe.png" height="500" width="1000" alt="Wireframe"></a>
+      </p>
+
+      <p style=
+      "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+    Rational for Organization
+    <br>
+    <br>
+    This website is organized in a way that follows the flow of the course.  
+    Each unit link contains the information for that unit.  There are also 
+    main page links that make it easy to find what you are looking for.  The 
+    students will be able to find information they need and the parents “How to” 
+    links are all in one location.  Even if a parent needs information from the 
+    student pages, they can use the calendar to find what unit they need to navigate too.
+     </p>
+         <h3>
+        Media
+         </h3>
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+         This website will include:<br><br>
+        Videos<br>
+        &nbsp; I will create all videos for the parent how to page, and the student resources.  
+        The videos will be used to show parents how to access material they might want to see in 
+        regard to their students.  The videos for the students will be used to help them better understand 
+        the material for the unit.<br><br>
+        Images <br>
+        &nbsp; All images will either be created by myself or will be used through creative commons and 
+        credited as requested by the creator.  Images will be used to further assist students in the 
+        understanding of the material.  The image / logo on the header of the pages will be created by myself.<br><br>
+        Forms <br> 
+        &nbsp; There will be forms that are imbedded into the website, those will be created by myself.  The forms 
+        are used to assist students in assessing their own understanding of each unit. 
+        </p>
+
+
+         <h3>
+        Color Scheme and Rationale
+         </h3>
+         <p style=
+         "border: 3px ridge #ff9933; padding: 10px;background: #ffffff">
+         The color scheme of my page will consist of oranges, blacks, greys, and whites.  The reasoning behind this 
+         is that those are the colors of our school and all school websites share a similar color scheme.  This page is an 
+         example of how my color scheme will look. <br><br>
+         &nbsp; Headers, footers, and navigation bars will be orange with black writing<br>
+         &nbsp; The main background will be white with black writing<br>
+         &nbsp; Main Headings will be black with orange writing.<br>
+</p>
+</body>
+<footer>
+<p style= 
+"background-color: #ff9933;
+color: #000000;
+padding: 10px 40px 10px 40px;">
+Page Created by <a href="mailto:jo015@mail.missouri.edu">Jennifer Morelock</a>
+
+<br>
+Last updated on March 11, 2018
+
+<br>
+All material in this site is original and created by the site owner, Jennifer Morelock.  
+Any further use of the material is prohibited without permissions from the site owner.
+
+</p>
+</footer>
+</html>
