@@ -14,6 +14,10 @@ h3 {
     color: #ff9933;
     padding: 10px 40px 10px 40px;
 }
+h4 { 
+    text-align:center;
+}
+
 p {
     border: 3px ridge #ff9933;
     padding: 10px; 
@@ -52,3 +56,45 @@ footer {
     padding: 10px 40px 10px 40px;
 }
 
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#feature { 
+    border: 3px ridge #ff9933;
+    padding: 10px; 
+    background: #ffffff;
+    text-align: left; 
+}
+.feature { 
+    border: 3px ridge #ff9933;
+    padding: 10px; 
+    background: #ffffff;
+    text-align: left; 
+}
+
+table,td, th { 
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    text-align: center;
+}
+
+.studyguide {
+    border: 3px ridge #ff9933;
+    padding: 10px 10px 10px 30px; 
+    background: #ffffff;
+    text-align: left; 
+    list-style-type: circle;
+    display: block;
+    margin-top: 1em;
+    margin-bottom: 1 em;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.list {
+    display: list-item;
+    float: none;
+}
