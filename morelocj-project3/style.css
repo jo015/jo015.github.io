@@ -1,0 +1,62 @@
+body{
+    background-color: #fffdd0;
+    font-family: sans-serif;
+    margin: 20 px;
+}
+.basic{
+    border:2px red;
+    border-style: dashed;
+    min-height: 30px
+}
+
+.types{
+    border-top: 10px purple double;
+    border-right: 10px black dotted;
+    border-left: 10px red dashed;
+    border-bottom: 10px orange groove;
+    width: 280px;
+    min-height: 100px;
+    
+}
+.cell{
+    border: 5px green solid;
+    padding: 20px 50px 100px 10px;
+}
+
+.margin{
+    border: 10px blue solid;
+    margin: 20px 100px 200px 50px
+}
+.none{
+    border: 2px blue solid;
+    height: 300px;
+    width: 500px;
+}
+.left{
+    border: 2px purple solid;
+    height: 300px;
+    width: 500px;
+
+}
+.leftpic{
+    float: left;
+    margin: 0;
+
+}
+.right{
+    border: 2px orange solid;
+    height: 300px;
+    width: 500px; 
+}
+.rightpic{
+    float: right;
+    margin: 0;
+}
+
+.hidden{
+    border: 2px purple solid;
+    height: 100px;
+    width: 800px;
+    overflow: hidden
+
+}
