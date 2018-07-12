@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Mrs. Smith's Comments and Concerns</title>
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <script>       
+     function validateForm() {
+            var x = document.forms["myForm"]["fname"].value;
+            if (x == "") {
+                alert("Name must be filled out");
+                return false;
+            }}
+    </script>
+  </head>
+<body>
+    <header>
+            <img src="griffon.png"  alt="Griffon">
+            <h1>Questions and Comments</h1>
+        
+    <nav>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="announcements/announcements.html">Announcements</a></li>
+        <li><a href="reading/reading.html">Reading Class</a></li>
+        <li><a href="creativewriting/creativewriting.html">Creative Writing Class</a></li>
+        <li><a href="about/about.html">About Me</a></li>
+        <li><a href="form.html">Questions and Concerns</a></li>
+        </ul>
+    </nav>
+    </header>
+  
+        <form name="myForm" action="/action_page.php"
+        onsubmit="return validateForm()" method="post">
+	
+        <fieldset>
+
+        <section>
+            <p>* indicates required field</p>
+            <label for ="fname">Name:<span> *</span> </lable>
+            <input type="text" name="fname">
+        </section>
+    
+        <section>
+            <label for="comment">Question or Comment:</label>
+            <textarea id="comment" name="comment"></textarea>
+        </section>
+
+         <section>
+            <label for ="email">Email:</label><br/>
+            <input type="text" name="email">
+        </section>
+
+        <section>
+                <label for ="number">Phone Number:</label>
+                <input type="text" name="number">
+            </section>
+
+        <section>
+        <input type="submit" value="Submit">
+        </section>
+    </form>
+    </fieldset>
+
+</body>
+</html>
+
