@@ -5,7 +5,7 @@ body {
 
 header{
    background: #d62828;
-   margin: 75px 0 0 0;
+   margin: 78px 0 0 0;
    height:170px;
     }
 
@@ -137,3 +137,27 @@ footer{
             color:#d62828;
             }	
         }
+
+
+        form{
+            width:13em; 
+            margin:20px auto; 
+            border:1px solid #bbb7ae;
+            padding:.5em .5em .15em;
+        }
+        fieldset {
+            margin:0;
+            padding:0 0 .2em 0;
+            width:100%;
+            border:0;
+            }
+        section {
+            margin-bottom: 5px;
+        }
+
+     section p{
+            font-weight: normal;
+            font-size: .7em;
+            line-height: 1.2;
+           color:red;
+                }
