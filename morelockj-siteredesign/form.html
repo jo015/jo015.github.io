@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="UTF-8">
-    <title>Mrs. Smith's Comments and Concerns</title>
+    <title>Mrs. Smith's Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css"/>
     <script>       
      function validateForm() {
@@ -16,20 +16,22 @@
 <body>
     <header>
             <img src="griffon.png"  alt="Griffon">
-            <h1>Questions and Comments</h1>
+            <h1>Contact Information</h1>
         
     <nav>
         <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="announcements/announcements.html">Announcements</a></li>
-        <li><a href="reading/reading.html">Reading Class</a></li>
-        <li><a href="creativewriting/creativewriting.html">Creative Writing Class</a></li>
+        <li><a href="classes/classes.html">Classes</a></li>
         <li><a href="about/about.html">About Me</a></li>
-        <li><a href="form.html">Questions and Concerns</a></li>
+        <li><a href="form.html">Contact</a></li>
         <li><a href="gallery/gallery.html" target="_blank">Photo Gallery</a></li>
         </ul>
     </nav>
     </header>
+    <article>
+        <p>        If you need to contact me, you can call the main school phone number, email me at <a href="mailto:ssmith@ridgefield.k12.us">ssmith@ridgefield.k12.us</a> 
+            , or fill out the form.</p>
+    </article>
   
         <form name="myForm" action="/action_page.php"
         onsubmit="return validateForm()" method="post">
@@ -38,30 +40,42 @@
 
         <section>
             <p>* indicates required field</p>
-            <label for ="fname">Name:<span> *</span> </lable>
-            <input type="text" name="fname">
+            <label for ="fname">Name:<span> *</span> </lable><br>
+            <input id="name" type="text" name="fname">
         </section>
     
         <section>
-            <label for="comment">Question or Comment:</label>
+            <label for="comment">Question or Comment:</label><br>
             <textarea id="comment" name="comment"></textarea>
         </section>
 
          <section>
             <label for ="email">Email:</label><br/>
-            <input type="text" name="email">
+            <input id ="email" type="text" name="email">
         </section>
 
         <section>
-                <label for ="number">Phone Number:</label>
-                <input type="text" name="number">
+                <label for ="number">Phone Number:</label><br>
+                <input id = "number" type="text" name="number">
             </section>
 
         <section>
         <input type="submit" value="Submit">
         </section>
-    </form>
     </fieldset>
+    </form>
+
+    <footer>
+            <h3>
+             Page Created by <a href="mailto:jo015@mail.missouri.edu">Jennifer Morelock</a>
+                <br>
+                Last updated July 2018
+                <br>
+            </h3>
+
+    </footer>
+    
+
 
 </body>
 </html>

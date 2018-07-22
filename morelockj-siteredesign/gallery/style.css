@@ -1,5 +1,70 @@
+body {
+  font-family:helvetica, arial, sans-serif;
+  background-color: #fff
+  }
 
+header{
+ background: #d62828;
+ margin: 78px 0 0 0;
+ height:170px;
+  }
 
+header h1 {
+
+  
+  padding: 40px 10px 0 30px;
+font-weight:400;
+font-size:4em;
+letter-spacing:-.05em;
+color:#000;
+  }
+header img {
+  float: left;
+  height: 150px;
+  padding: 10px 0 10px 10px;
+  
+}
+nav{
+  display:table;
+background:#000;
+padding:0;
+  margin:0;
+  text-align: center;
+  width: 100%;
+  position: fixed;
+  top: 0;   
+}
+nav ul {
+  padding:5px 0px 3px;
+  text-align: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  }
+nav li {
+  text-align: center;
+  list-style-type:none;
+  border-left: #f9d616 1px solid;
+  border-right:  #f9d616 1px solid;
+  padding:3px 10px;
+  display: table-cell
+  }
+nav li + li {
+  border-top:1px solid #000;
+  }
+nav a {
+  text-decoration:none;
+  font:15px 'Exo', helvetica, arial, sans-serif;
+  font-weight:400;
+  color:#fff;
+  }
+nav a:hover {
+  color:#f9d616;
+  }	
+.row{
+  margin: 10px;
+}
 
 .row > .column {
     padding: 0 8px;
@@ -127,3 +192,47 @@
   .hover-shadow:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   }
+
+
+  @media only screen and (max-width:1050px){
+    header img{
+        text-align: center;
+        height: 100px;
+    }    
+    header h1{
+        font-weight: 200;
+        font-size: 2.5em
+    } 
+    nav{
+       background:#000;
+       width: 100%;
+       margin: 0;
+       padding:0;
+       text-align: center;
+   }
+   nav ul {
+       border:1px solid #000;
+       border-radius:3px; 
+       text-align: center
+       }
+   nav li {
+       text-align: center;
+       list-style-type:none;
+       padding:3px 10px;
+       
+       }
+   nav li + li {
+       border-top:1px solid #000;
+       }
+   nav a {
+       text-decoration:none;
+       font:15px 'Exo', helvetica, arial, sans-serif;
+       font-weight:200;
+       color:#fff;
+       }
+   nav a:hover {
+       color:#d62828;
+       }	
+   article p{
+       width: 93%;
+   }

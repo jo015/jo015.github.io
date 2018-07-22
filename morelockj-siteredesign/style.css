@@ -40,7 +40,7 @@ nav ul {
 
     margin-left: auto;
     margin-right: auto;
-    width: 70%;
+    width: 100%;
     }
 nav li {
     text-align: center;
@@ -71,7 +71,23 @@ article p{
     padding:5px;
     margin: 5px;
     width: 47%;
+}
 
+.head {
+    text-align: center;
+    font-size: 2em;
+}
+
+.subhead{
+    font-size: 1.5em;
+}
+
+.bio {
+    height: 400px;
+}
+article img{
+    height: 25px;
+    width: 100%
 }
 .center{
     display: block;
@@ -103,7 +119,7 @@ footer{
          }    
          header h1{
              font-weight: 200;
-             font-size: 50px
+             font-size: 2.5em
          } 
          nav{
             background:#000;
@@ -115,7 +131,6 @@ footer{
         nav ul {
             border:1px solid #000;
             border-radius:3px; 
-
             text-align: center
             }
         nav li {
@@ -136,28 +151,49 @@ footer{
         nav a:hover {
             color:#d62828;
             }	
+        article p{
+            width: 93%;
         }
-
-
-        form{
-            width:13em; 
-            margin:20px auto; 
-            border:1px solid #bbb7ae;
-            padding:.5em .5em .15em;
+        fieldset{
+            width:93%;
         }
-        fieldset {
-            margin:0;
-            padding:0 0 .2em 0;
-            width:100%;
-            border:0;
-            }
+        
+    }
+
         section {
             margin-bottom: 5px;
         }
 
-     section p{
+    section p{
             font-weight: normal;
             font-size: .7em;
             line-height: 1.2;
-           color:red;
-                }
+            color:red;
+    }
+
+    fieldset{
+                float: left;
+                display: table-cell;
+                border: 5px solid #000;
+                background-color: #f9d616;
+                border-radius: 3px;
+                padding:5px;
+                margin: 5px;
+                width: 47%;
+            }
+    #comment{
+        width: 200px;
+
+    }
+
+    #name{
+        width: 200px;
+    }
+
+    #number{
+        width: 200px;
+    }
+
+    #email{
+        width: 200px;
+    }
